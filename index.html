@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>PGP-Encrypted Chat over WebRTC</title>
+    <title>anonim chat</title>
     <!--<script src="js/adapter.js"></script>-->  <!-- No longer needed in 2020 -->
     <script src="js/jquery-2.0.0.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -71,16 +71,16 @@
 <div class="container">
   <fieldset class="well row center-block">
       <p class="head muted">
-        :: Serverless WebRTC chat.  Your messages are sent from your browser directly to your partner's browser.<br/>
-        :: The connection is encrypted, and no history is kept when you refresh.  <!--Use backtics for `code`.-->
+        :: Sunucusuz swantex sohbeti. Mesajlarınız, tarayıcınızdan doğrudan partnerinizin tarayıcısına gönderilir..<br/>
+        :: Bağlantı şifrelenir ve yenilediğinizde hiçbir geçmiş tutulmaz..  <!--Use backtics for `code`.-->
         <hr/>
       </p>
     <div class="text-info" id="chatlog"></div>
   </fieldset>
   <form class="form-inline row" onSubmit="return sendChatboxMessage()" action="">
   <div class="input-append">
-    <input type="text" id="messageTextBox" class="span10" placeholder="Type your message here">
-    <button type="submit" id="sendMessageBtn" class="btn span2" style="float:right;">Send Message</button>
+    <input type="text" id="messageTextBox" class="span10" placeholder="mesajını buraya yaz :D">
+    <button type="submit" id="sendMessageBtn" class="btn span2" style="float:right;">gönder</button>
   </div>
   </form>
   <div class="row">
@@ -110,17 +110,17 @@
       <div id="bitrate"></div>
     </div>
     <div id="videoSection" style="width: 50%; min-width: 300px">
-      <h4>Audio &amp; Video</h4>
-        <button class="btn" onclick="WebRTCChat.initVideo();" disabled>Share Audio + Video</button>
-        <button class="btn" onclick="WebRTCChat.initAudio();" disabled>Share Audio Only</button><br/>
+      <h4>ses &amp; Video</h4>
+        <button class="btn" onclick="WebRTCChat.initVideo();" disabled>Ses + Video paylaş</button>
+        <button class="btn" onclick="WebRTCChat.initAudio();" disabled>Share sadece ses paylaş</button><br/>
         <br/>
         <div style="float: right; width: 50%; text-align: center">
-          Their video<br/>
-          <video id="theirVideo" style="border: 1px solid #ddd;width:98%;height:auto;display:inline-block;" autoplay muted>
+          yabancıların video<br/>
+          <video id="yabancıların video" style="border: 1px solid #ddd;width:98%;height:auto;display:inline-block;" autoplay muted>
           </video>
         </div>
         <div style="width: 50%; text-align: center">
-          My video<br/>
+          videom<br/>
           <video id="myVideo" style="border: 1px solid #ddd;width:98%;height:auto;display:inline-block;" autoplay muted>
           </video>
         </div>
@@ -160,7 +160,7 @@
 <div class="modal" id="createOrJoin" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="title4" aria-hidden="true">
   <div class="modal-header"><h3 id="title4">Create or join a room?</h3></div>
   <div class="modal-body">
-    <label>Your Name: <input id="userName" placeholder="anonymous"></input></label>
+    <label>ismin: <input id="userName" placeholder="swantex"></input></label>
     <label>Send typing notifications:                  <input style="margin:0px;" id="sendTyping" type="checkbox" checked="true"/></label><br>
 
     <hr/>
